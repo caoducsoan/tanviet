@@ -57,87 +57,87 @@
 // })
 // ! ScrollMagic v2.0.7 | (c) 2019 Jan Paepke (@janpaepke) | license & info: http://scrollmagic.io 
 window.onscroll = function() {
-        scrollFunction()
-    };
+    scrollFunction()
+};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
     }
+}
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 window.onscroll = function() {
-        $(window).scroll(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
             $(".scrollTop:hidden").css("opacity", "1");
-        } else {         
+        } else {
             $(".scrollTop").css("opacity", "0");
         }
     });
-    $(function() { $(".scrollTop").click(function() { $("html,body").animate({ scrollTop: 0}, "1000"); return false }) })
-    };
-  
+    $(function() { $(".scrollTop").click(function() { $("html,body").animate({ scrollTop: 0 }, "1000"); return false }) })
+};
 
 
 
 
 
-
-
-   
-$(document).ready(function() {
-        $('.customer-logos').slick({
-            slidesToShow: 1, // hiển thị bao nhiêu hình trong 1 slide
-            slidesToScroll: 1, // kéo được bao nhiêu slide
-            autoplay: true, // tự động chạy
-            autoplaySpeed: 4500, // thời gian chạy
-            arrows: false, // hiển thị nút bấm trái phải
-            dots: 5, // hiển thị dấu chấm ở dưới
-            pauseOnHover: true, // dừng tự động chạy khi hover chuột vào slide
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 1
-                }
-            }]
-        });
-    });
 
 
 
 
 $(document).ready(function() {
-        $('.customer-dt').slick({
-            slidesToShow: 5, // hiển thị bao nhiêu hình trong 1 slide
-            slidesToScroll: 1, // kéo được bao nhiêu slide
-            autoplay: true, // tự động chạy
-            autoplaySpeed: 4500, // thời gian chạy
-            arrows: false, // hiển thị nút bấm trái phải
-            dots: 5, // hiển thị dấu chấm ở dưới
-            pauseOnHover: true, // dừng tự động chạy khi hover chuột vào slide
-            responsive: [{
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 2
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 1
-                }
-            }]
-        });
+    $('.customer-logos').slick({
+        slidesToShow: 1, // hiển thị bao nhiêu hình trong 1 slide
+        slidesToScroll: 1, // kéo được bao nhiêu slide
+        // autoplay: true, // tự động chạy
+        autoplaySpeed: 4500, // thời gian chạy
+        arrows: false, // hiển thị nút bấm trái phải
+        dots: true, // hiển thị dấu chấm ở dưới
+        pauseOnHover: true, // dừng tự động chạy khi hover chuột vào slide
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
     });
+});
+
+
+
+
+$(document).ready(function() {
+    $('.customer-dt').slick({
+        slidesToShow: 5, // hiển thị bao nhiêu hình trong 1 slide
+        slidesToScroll: 1, // kéo được bao nhiêu slide
+        autoplay: true, // tự động chạy
+        autoplaySpeed: 4500, // thời gian chạy
+        arrows: false, // hiển thị nút bấm trái phải
+        dots: 5, // hiển thị dấu chấm ở dưới
+        pauseOnHover: true, // dừng tự động chạy khi hover chuột vào slide
+        responsive: [{
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});

@@ -1,17 +1,22 @@
 {
-  "name": "tanviet",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7",
-    "vue-slick-carousel": "^1.0.6"
-  },
-  "devDependencies": {}
+    "name": "tanviet",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "chart.js": "^2.7.1",
+        "core-js": "^3.15.1",
+        "highcharts": "^9.3.1",
+        "highcharts-vue": "^1.4.0",
+        "nuxt": "^2.15.7",
+        "nuxt-highcharts": "^2.0.2",
+        "vue-chartjs": "^3.4.0",
+        "vue-slick-carousel": "^1.0.6"
+    },
+    "devDependencies": {}
 }

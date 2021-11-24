@@ -18,7 +18,7 @@
 							<a class="nav-link" href="#">Giới Thiệu</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Qũy mở </a>
+							<a class="nav-link" href="#">Quản lý quỹ đầu tư</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Quản Lý Tài Sản</a>
